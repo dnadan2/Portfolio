@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS";
+}
+
+h1 {
+  font-size:32px;
+  margin:2%;
+  margin-left:7%;
+  margin-right:7%;
+  color: #7a7a7a;
+}
+
+h2 {
+  font-size:20px;
+  margin-bottom:2%;
+  color: #7a7a7a;
+}
+
+p {
+  margin-left:7%;
+  margin-right:7%;
+  color: #8B8B8B;
+}
+
+hr {
+  margin:7%;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #B1B1B1;
+}
+
+
+.bioText {
+  color:#F0F0F0;
+  margin:17%;
+  margin-top:0%;
+}
+
+.contactInfo {
+  color:#F0F0F0;
+  margin:17%;
+  margin-bottom: 5%;
+  position:absolute;
+  bottom: 0; 
+  right: 0;
+  font-size: 10px;
+}
+
+.bioBold {
+  color:white;
+}
+
+.portfolioLeft {
+  width:48%;
+  float:left;
+  margin:0;
+}
+
+.portfolioRight {
+  width:48%;
+  float:right;
+}
+
+.portfolioItem {
+  margin-left:7%;
+  margin-right:7%;
+  margin-bottom:3%;
+  display:inline-block;
+}
+
+.portfolioText {
+  margin:0;
+  font-size:10px;
+}
+
+.tag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-top:2%;
+  font-size:11px;
+}
+
+#leftSide {
+    background-color: #D4C6AB;
+    width:25%;
+    height:100%;
+    position:absolute;
+    background-size: auto 100%;
+    background-image:url(assets/sea-sunset-ocean-twilight.jpg);
+    background-repeat: no-repeat;
+    position:fixed;
+}
+
+#rightSide {
+    right:0px;
+    width:75%;
+    height:200%;
+    position:absolute;
+    background-image:url(assets/noise.png);
+  
+}
+
+#profileImage {
+  margin-top:30%;
+  margin-left:58%;
+  width: 25%;
+}
