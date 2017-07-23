@@ -3,48 +3,151 @@
   <head>
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
-  <body>
+  <body onload = "initialise();">
     <div id = "leftSide">
       <img id = "profileImage" src = "assets/profile.png"/>
       <p class = "bioText"> <b class = "bioBold">Dan Blessett-Williams</b>, <br/> Msci Computer Science at the University of Birmingham</p>
-      <p class = "contactInfo"> dblessettwilliams@outlook.com</p>
+      <div  class = "contactInfo">
+        <a href = "https://bitbucket.org/dnadan2/profile/repositories"><img class = "icon" src = "assets/bitbucket-icon.png" /> </a>
+        <a href = "https://www.facebook.com/dan.blessettwilliams"> <img class = "icon" src = "assets/facebook-icon.png" /></a>
+        <a href = "https://github.com/dnadan2"> <img class = "icon" src = "assets/github-icon.png" /></a>
+        <p class = "contactText"> dblessettwilliams@outlook.com</p>
+      </div>
     </div>
     <div id = "rightSide">
       <h1>Hi There!</h1>
-      <p>Welcome to my portfolio, a collection of programs I have made entirely or played a substancial part in making. Some of these projects have been released, some were completed but never released and some, often because university or some other more important project came around, are incomplete. These are here for completeness. For a display of websites i have made visit <a href="www.websites.danblessettwilliams.com">websites</a>.</p>
+      <p>Welcome to my portfolio, a collection of programs I have made entirely or played a substancial part in making. Some of these projects have been released, some were completed but never released, some are still ongoing and some are incomplete. Most incomplete programs are not included. 
+      <br><br>
+      If you would like to see any of the following running don't hesitate to contact me. Most still run on my laptop so at worst I can provide a screen capture video, for JavaScript ones I can host a local server but for others only some were packaged into installables. 
+      <br><br>
+      Github, Bit Bucket and the university's SVN repository are my most used repositories. I have put links to my profiles on the bottom left of the page, however most repositories on these are private. I cannot link to the university's repository.
+      <br><br>
+      For a display of websites i have made visit <a href="www.websites.danblessettwilliams.com">here</a>.</p>
       <hr>
       
+      <div id="selectPlacement">
+      </div>
+      
+      <div id="portfolioPlacement">
+      
       <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/cowdrop-poster.png">
+        <img class = "portfolioLeft" src ="assets/cryptovision.png">
         </img>
         <div class = "portfolioRight">
-          <h2>Cow Drop</h2>
-          <p class = "portfolioText"> Cow drop was designed to be a mobile game, but due to being programmed in Javascript it is also playable online. The full version can be found either on Google Play Store <a href="https://goo.gl/Loiqkl">here</a> or on Kongregate <a href="https://goo.gl/XctmMT">here</a>. It was programmed in one week with one other person.
+          <h2>CryptoVision</h2>
+          <p class = "portfolioText">CryptoVision was a Team project assigned by the university, the only specification being it had to be a visualisation. We developed an educational tool to help A level and First year university students to understand 3 different encryption algorithms. It did this by step by step converting pixels of a chosen image into encrypted colours. It went through each step explaining what happened. These steps could be sped up, slowed down, paused, skipped, etc.
           </p>
-          <div class = "tag">JavaScript</div>
-          <div class = "tag">HTML5</div>
-          <div class = "tag">GameClosure</div>
-          <div class = "tag">Git</div>
-          <div class = "tag">2 Person Project</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Published</div>
+          <div class = "languagetag">Java</div>
+          <div class = "IDEtag">Ecplise</div>
+          <div class = "contributortag">5 Person Project</div>
+          <div class = "versionControltag">SVN</div>
+          <div class = "typetag">Visualisation</div>
+          <div class = "typetag">Educational</div>
+          <div class = "statetag">Complete</div>
         </div>
       </div>
       
       <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/10905 JL.bmp">
+        <img class = "portfolioLeft" src ="assets/robot_bottom.jpg">
         </img>
         <div class = "portfolioRight">
-          <h2>Detecting Cells</h2>
-          <p class = "portfolioText">In a Second year module, using this image and several others as training a program was created that could, as accuretly as possible, outline the edges of the cells. The focus of this module was testing combinations of edge detection methods(guassian, laplacian, hough transform etc), noise removal, greyscaling and thresholding to find the optimal edge map after ROC analysis.
+          <h2>Robotic Waiter</h2>
+          <p class = "portfolioText">In a university module we were given a robot. After considering multiple functions for the robot we rigged it with a  telescope tripod, a kenect camera fixed on a lego mount to give us sensors in addition to the laser and sonar build into the base of the robot. The laser was used to avoid crashes and the kenect was used for head detection in order to detect people. We used the ROS navstack, an amcl algorithm, to navigate from place to place. The map was generated using SLAM. With these tools we aimed to make a robotic waiter so we developed a hierarchical task planning module to prioritise functions like serving assigning table to new customers getting food from the kitchen etc. The robot also had a UI for choosing meals, and could use text to voice to communicate. The University of Birmingham is currently hosting our website from the module <a href = "http://www.cs.bham.ac.uk/internal/courses/int-robot/halloffame/2016/Leslie/">here</a>
           </p>
-          <div class = "tag">Java</div>
-          <div class = "tag">MatLab</div>
-          <div class = "tag">Only me</div>
-          <div class = "tag">SVN</div>
-          <div class = "tag">Statistical</div>
-          <div class = "tag">Complete</div>
+          <div class = "languagetag">Python</div>
+          <div class = "IDEtag">PyCharm</div>
+          <div class = "versionControltag">SVN</div>
+          <div class = "othertag">ROS</div>
+          <div class = "contributortag">6 Person Project</div>
+          <div class = "typetag">Service</div>
+          <div class = "typetag">Robotic</div>
+          <div class = "statetag">Complete</div>
+        </div>
+      </div>
+      
+      <div class = "portfolioItem">
+        <img class = "portfolioLeft" src ="assets/method-loci.png">
+        </img>
+        <div class = "portfolioRight">
+          <h2>Method of Loci</h2>
+          <p class = "portfolioText">The method of loci is a memory technique. Using this method you imagine your house or a familiar location and you place objects around the house. In this 24 hour hackathon we made a virtual house for this purpose. Using the occulous rift you could move around the house placing images of any object wherever you wanted(option to upload your own). While we originally had intentions for a whole house we had a lot of trouble getting the oculous rift package to work with our other code and so by the end only had this one room
+          </p>
+          <div class = "languagetag">JavaScript</div>
+          <div class = "othertag">Oculous Rift</div>
+          <div class = "othertag">Hackathon</div>
+          <div class = "versionControltag">Git</div>
+          <div class = "contributortag">2 Person Project</div>
+          <div class = "typetag">Educational</div>
+          <div class = "typetag">3D</div>
+          <div class = "statetag">Complete</div>
+        </div>
+      </div>
+      
+      <div class = "portfolioItem">
+        <img class = "portfolioLeft" src ="assets/domineering.png">
+        </img>
+        <div class = "portfolioRight">
+          <h2>Domineering</h2>
+          <p class = "portfolioText">Note: this image is not the result of the game, The game was all in command line with no UI. The major coding task of the game was programming the game rules and an AI to play against the user. It was done soley in Haskell a functional programming language. 
+          </p>
+          <div class = "languagetag">Haskell</div>
+          <div class = "othertag">Functional</div>
+          <div class = "contributortag">Only me</div>
+          <div class = "typetag">Game</div>
+          <div class = "statetag">Complete</div>
+        </div>
+      </div>
+      
+      <div class = "portfolioItem">
+        <img class = "portfolioLeft" src ="assets/weather-app.png">
+        </img>
+        <div class = "portfolioRight">
+          <h2>Weather App</h2>
+          <p class = "portfolioText">In another module at university this weather app was created. While only a small coding task The Weather App uses free online API provided by openweathermap.org in order to get up to date weather and provide some standard small talk about the current and upcoming weather as well as displaying it to the user. It gives temperature, weather condition and a time. It also contained a search bar to choose locations to see the weather for. 
+          </p>
+          <div class = "languagetag">Java</div>
+          <div class = "typetag">App</div>
+          <div class = "IDEtag">Android Studio</div>
+          <div class = "contributortag">Only me</div>
+          <div class = "typetag">Utility</div>
+          <div class = "statetag">Complete</div>
+        </div>
+      </div>
+      
+       <div class = "portfolioItem">
+        <img class = "portfolioLeft" src ="assets/snooker-scorer.png">
+        </img>
+        <div class = "portfolioRight">
+          <h2>Snooker Scorer</h2>
+          <p class = "portfolioText">In the same module the weather app was created this app to keep score of a snooker game was made. This app kept track of balls plotted by each player, their score including fouls. Players total score and total won games. For the current frame which balls are playable and finally options for if multiple balls were potted in a turn.
+          </p>
+          <div class = "languagetag">Java</div>
+          <div class = "typetag">App</div>
+          <div class = "IDEtag">Android Studio</div>
+          <div class = "contributortag">Only me</div>
+          <div class = "typetag">Utility</div>
+          <div class = "statetag">Complete</div>
+        </div>
+      </div>
+      
+      <div class = "portfolioItem">
+        <img class = "portfolioLeft" src ="assets/mathformer.png">
+        </img>
+        <div class = "portfolioRight">
+          <h2>Mathformer</h2>
+          <p class = "portfolioText">Mathformer was made for my A2 Computing program it was the first large scale program I made. It was an educational game to teach maths. This game was effectively a 2D physics engine with an SQL database backend. The studentsand teachers could create accounts and log in, the students would be greeted by a 2D platformer game in which they had to collect numbers and operators scattered around the level to take them to the door and place them in the right places to make the equation true. The teacher would be able to see the back end databse to see their progress.
+          </p>
+          <div class = "languagetag">C#</div>
+          <div class = "languagetag">SQL</div>
+          <div class = "othertag">XNA</div>
+          <div class = "othertag">MySQL</div>
+          <div class = "IDEtag">Visual Studio</div>
+          <div class = "contributortag">Only me</div>
+          <div class = "typetag">Game</div>
+          <div class = "typetag">Educational</div>
+          <div class = "statetag">Complete</div>
         </div>
       </div>
       
@@ -55,13 +158,30 @@
           <h2>Untitled Space Game</h2>
           <p class = "portfolioText">This is a newly started game. It is intended to be released on steam. It is a strategy game set in space, each player will build off of planets, asteroids, space stations in order to advance technology, money and military in order to beat the other players. It is 3D on a hexagon grid. At the moment the game engine is nearing completion, created with one other person.
           </p>
-          <div class = "tag">C#</div>
-          <div class = "tag">MonoGame</div>
-          <div class = "tag">Visual Studio</div>
-          <div class = "tag">Git</div>
-          <div class = "tag">2 Person Project</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Ongoing</div>
+          <div class = "languagetag">C#</div>
+          <div class = "othertag">MonoGame</div>
+          <div class = "IDEtag">Visual Studio</div>
+          <div class = "versionControltag">Git</div>
+          <div class = "typetag">3D</div>
+          <div class = "contributortag">2 Person Project</div>
+          <div class = "typetag">Game</div>
+          <div class = "statetag">Ongoing</div>
+        </div>
+      </div>
+      
+      <div class = "portfolioItem">
+        <img class = "portfolioLeft" src ="assets/forester.png">
+        </img>
+        <div class = "portfolioRight">
+          <h2>Forester</h2>
+          <p class = "portfolioText">A personal project that has been long running but slow as takes low priority. Currently it is a randomly generate 2D tile based island with trees, lakes, player, limited items, beaches and a sea. A large amount is planned for the future with multiple islands, multiplayer, animals, crafting, hunting, building and much more.
+          </p>
+          <div class = "languagetag">C#</div>
+          <div class = "othertag">MonoGame</div>
+          <div class = "typetag">Game</div>
+          <div class = "contributortag">Only me</div>
+          <div class = "IDEtag">Visual Studio</div>
+          <div class = "statetag">Ongoing</div>
         </div>
       </div>
       
@@ -72,13 +192,13 @@
           <h2>Bleak - Story Creator</h2>
           <p class = "portfolioText"> This goes hand in hand with the Bleak game. It is a tool to create your own interactive story. While it has yet to be made graphically pleasing most of the functionality is there. You can make any story node, it can have pretext, posttext, a photo, change inventory items or player statistics. it can be Exported into a .story file. Most can be changed and updated in a node panel additionally choices can be connected by dragging and dropping arrows. In the future the UI will be improved and Import will work, animations will also be accepted or preset ones can be added, created with one other persons. 
           </p>
-          <div class = "tag">JavaScript</div>
-          <div class = "tag">HTML5</div>
-          <div class = "tag">Git</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">2 Person Project</div>
-          <div class = "tag">Utility</div>
-          <div class = "tag">Ongoing</div>
+          <div class = "languagetag">JavaScript</div>
+          <div class = "languagetag">HTML5</div>
+          <div class = "versionControltag">Git</div>
+          <div class = "typetag">Game</div>
+          <div class = "contributortag">2 Person Project</div>
+          <div class = "typetag">Utility</div>
+          <div class = "statetag">Ongoing</div>
         </div>
       </div>
       
@@ -89,122 +209,30 @@
           <h2>Bleak</h2>
           <p class = "portfolioText"> This is an interactive story game, given a scenario the user gets to chose one of multiple choices to take different arcs in the story. Each part of the story comes with an image. In the future the game will display the inventory throughout the game as well as animated acompanying pictures. While this is relativly simple to code it has not yet been completed largely due to the story creator being incomplete.
           </p>
-          <div class = "tag">JavaScript</div>
-          <div class = "tag">HTML5</div>
-          <div class = "tag">Git</div>
-          <div class = "tag">2 Person Project</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Ongoing</div>
+          <div class = "languagetag">JavaScript</div>
+          <div class = "languagetag">HTML5</div>
+          <div class = "versionControltag">Git</div>
+          <div class = "contributortag">2 Person Project</div>
+          <div class = "typetag">Game</div>
+          <div class = "statetag">Ongoing</div>
         </div>
       </div>
       
-      
-      <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/forester.png">
-        </img>
-        <div class = "portfolioRight">
-          <h2>Forester</h2>
-          <p class = "portfolioText">A personal project that has been long running but slow as takes low priority. Currently it is a randomly generate 2D tile based island with trees, lakes, player, limited items, beaches and a sea. A large amount is planned for the future with multiple islands, multiplayer, animals, crafting, hunting, building and much more.
-          </p>
-          <div class = "tag">C#</div>
-          <div class = "tag">Monogame</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Only me</div>
-          <div class = "tag">VisualStudio</div>
-          <div class = "tag">Ongoing</div>
-        </div>
       </div>
-      
-      <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/isometric.png">
-        </img>
-        <div class = "portfolioRight">
-          <h2>Isometric</h2>
-          <p class = "portfolioText">One of my first personal projects, an Isometric game engine. Read map data from a file so could customise landscape. It was 2D isometric view and each square could be highlighted, have objects placed on them and function to zoom and pan camera. It was never finished because AS exams needed focusing on.</p>
-          <div class = "tag">C#</div>
-          <div class = "tag">XNA</div>
-          <div class = "tag">Only me</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Game Engine</div>
-          <div class = "tag">VisualStudio</div>
-          <div class = "tag">Incomplete</div>
-        </div>
-      </div>
-      
-      <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/codedungeon.png">
-        </img>
-        <div class = "portfolioRight">
-          <h2>Isometric</h2>
-          <p class = "portfolioText">In a 36 hour Hackathon in Barcelona me and two others created this. It is an educational game aimed to help teach younger people to code filled with sounds animations and basic graphics. In it you controled a player via a code window on the side. It consisted of 2 levels and a boss level to show more advanced possibilities. This boss level required coding a binary search.
-          </p>
-          <div class = "tag">JavaScript</div>
-          <div class = "tag">3 Person Project</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Educational</div>
-          <div class = "tag">Hackathon</div>
-          <div class = "tag">Complete</div>
-        </div>
-      </div>
-      
-      <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/cryptovision.png">
-        </img>
-        <div class = "portfolioRight">
-          <h2>CryptoVision</h2>
-          <p class = "portfolioText">CryptoVision was a Team project assigned by the university, the only specification being it had to be a visualisation. We developed an educational tool to help A level and First year university students to understand 3 different encryption algorithms. It did this by step by step converting pixels of a chosen image into encrypted colours. It went through each step explaining what happened. These steps could be sped up, slowed down, paused, skipped, etc.
-          </p>
-          <div class = "tag">Java</div>
-          <div class = "tag">Ecplise</div>
-          <div class = "tag">5 Person Project</div>
-          <div class = "tag">Visualisation</div>
-          <div class = "tag">Educational</div>
-          <div class = "tag">Complete</div>
-        </div>
-      </div>
-      
-      
-      <div class = "portfolioItem">
-        <img class = "portfolioLeft" src ="assets/mathformer.png">
-        </img>
-        <div class = "portfolioRight">
-          <h2>Mathformer</h2>
-          <p class = "portfolioText">Mathformer was made for my A2 Computing program it was the first large scale program I made. It was an educational game to teach maths. This game was effectively a 2D physics engine with an SQL database backend. The studentsand teachers could create accounts and log in, the students would be greeted by a 2D platformer game in which they had to collect numbers and operators scattered around the level to take them to the door and place them in the right places to make the equation true. The teacher would be able to see the back end databse to see their progress.
-          </p>
-          <div class = "tag">C#</div>
-          <div class = "tag">SQL</div>
-          <div class = "tag">XNA</div>
-          <div class = "tag">MySQL</div>
-          <div class = "tag">Visual Studio</div>
-          <div class = "tag">Only me</div>
-          <div class = "tag">Game</div>
-          <div class = "tag">Educational</div>
-          <div class = "tag">Complete</div>
-        </div>
-      </div>
-      
       <!--
         Todo add portfolio for:
-          Method of Loci
           MineSweeper
-          Robotic waiter
           Need uni comp: run SSC programs and decide what to mention
-          Mobile and Uniqutous - snooker and weather app
-          assignment 4 info and the web
-          functional prgramming tic tac toe
           
         Todo:
           Search functionality
           Full page portfolio each
-          left image paralax
-          link to facebook, github, bitbucket, linkdin
           spellcheck and grammar check
-          hover colour changes
-          reorder
+          websites page
+          
+        https://pixelarity.com/strata
       -->
       
     </div>
   </body>
 </html>
-
-*https://pixelarity.com/strata

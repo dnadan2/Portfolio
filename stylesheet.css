@@ -31,15 +31,21 @@ hr {
   border-top: 1px solid #B1B1B1;
 }
 
+select {
+  margin-bottom:7%;
+}
+option {
+  background-color:#F6F0ED;
+}
 
 .bioText {
   color:#F0F0F0;
+  font-size: 15px;
   margin:17%;
   margin-top:0%;
 }
 
 .contactInfo {
-  color:#F0F0F0;
   margin:17%;
   margin-bottom: 5%;
   position:absolute;
@@ -55,6 +61,7 @@ hr {
 .portfolioLeft {
   width:48%;
   float:left;
+  opacity:0.8;
   margin:0;
 }
 
@@ -70,27 +77,114 @@ hr {
   display:inline-block;
 }
 
+.portfolioLeft:hover {
+  opacity:1;
+}
+
 .portfolioText {
   margin:0;
   font-size:10px;
 }
 
-.tag{
+.languagetag{
   background-color: #E5EEF4;
   color:#4D82A7;
   display: inline-block;
   padding: 5px;
   margin-top:2%;
+  margin-right:5px;
   font-size:11px;
 }
 
+.IDEtag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-top:2%;
+  margin-right:5px;
+  font-size:11px;
+}
+
+.versionControltag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-right:5px;
+  margin-top:2%;
+  font-size:11px;
+}
+
+.statetag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-right:5px;
+  margin-top:2%;
+  font-size:11px;
+}
+
+.othertag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-top:2%;
+  margin-right:5px;
+  font-size:11px;
+}
+
+.typetag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-top:2%;
+  margin-right:5px;
+  font-size:11px;
+}
+
+
+.contributortag{
+  background-color: #E5EEF4;
+  color:#4D82A7;
+  display: inline-block;
+  padding: 5px;
+  margin-top:2%;
+  margin-right:5px;
+  font-size:11px;
+}
+
+.icon {
+  height:25px;
+  margin-right:5px;
+  margin-bottom:2%;
+  float: right;
+}
+
+.icon:hover {
+  opacity:0.7;
+}
+
+.contactText {
+  color:#f2f2f2;
+}
+
+#filterBox {
+    margin-left:7%;
+    display:inline-block;
+    margin-right:2%;
+}
+
 #leftSide {
-    background-color: #D4C6AB;
+    background-color: #34383A;
     width:25%;
     height:100%;
     position:absolute;
     background-size: auto 100%;
-    background-image:url(assets/sea-sunset-ocean-twilight.jpg);
+    background-image:url(assets/sunset.jpg);
     background-repeat: no-repeat;
     position:fixed;
 }
@@ -98,9 +192,9 @@ hr {
 #rightSide {
     right:0px;
     width:75%;
-    height:200%;
     position:absolute;
     background-image:url(assets/noise.png);
+    display:inline-block;
   
 }
 
