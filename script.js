@@ -23,8 +23,8 @@ function initialise()
   "assets/codedungeon.png",
   "Code Dungeon", 
   "In a 36 hour Hackathon in Barcelona me and two others created this. It is an educational game aimed to help teach younger people to code filled with sounds, animations and simple graphics. In this game you controlled a character via a code window on the side. It consisted of 2 levels and a boss level. This boss level was implemented to show more advanced possibilities, it required coding a binary search.",
-  [languageValue, contributorsValue, typeValue, versionControlValue, typeValue, otherValue, stateValue],
-  ["JavaScript", "3 Person Project", "Game", "Git", "Educational", "Hackathon", "Complete"],
+  [languageValue, languageValue, contributorsValue, typeValue, versionControlValue, typeValue, otherValue, stateValue],
+  ["JavaScript", "HTML5", "3 Person Project", "Game", "Git", "Educational", "Hackathon", "Complete"],
   );
   items.push(portfolioItem);
 
@@ -57,8 +57,8 @@ function initialise()
  "assets/method-loci.png",
  "Method of Loci", 
  "The method of loci is a memory technique. Using this method you imagine your house or a familiar location and you place objects around it. In this 24 hour hackathon we made a virtual house for this purpose. Using the oculus rift you could move around the house placing images of any object wherever you wanted (option to upload your own). While we originally had intentions for a whole house we had a lot of trouble getting the oculous rift package to work with our other code and so by the end only had this one room",
-  [languageValue, otherValue, contributorsValue, versionControlValue, typeValue, typeValue, otherValue, stateValue],
- ["JavaScript", "Oculus Rift", "2 Person Project", "Git", "Educational", "3D", "Hackathon", "Complete"],
+  [languageValue, languageValue, otherValue, contributorsValue, versionControlValue, typeValue, typeValue, otherValue, stateValue],
+ ["JavaScript", "HTML5", "Oculus Rift", "2 Person Project", "Git", "Educational", "3D", "Hackathon", "Complete"],
  );
  items.push(portfolioItem);
 
